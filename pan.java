@@ -1,10 +1,6 @@
 package pro;
-
-
 import java.util.Scanner;
-
 public class PangramChecker {
-
 	public static void main(String[] args) {
 		char[] alpha = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
 				'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
