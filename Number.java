@@ -1,26 +1,31 @@
 import java.util.Scanner;
 
-public class Hunter75 {
-	public static void main(String args[]){
-		Scanner scan=new Scanner(System.in);
-		System.out.println("Enter the Limit");
-		int li=scan.nextInt(),i;
-		int num[]=new int[lim];
-		for(i=0;i<li;i++)
-		{
-			num[i]=scan.nextInt();
-		}
-		for(i=0;i<li-1;i++)
-		{
-			if(num[i]>num[i+1])
-			System.out.println(num[i+1]);
-			else
-				System.out.println("-1");
-			
-			
-		}
-				
-				
-	}
+public class Hunter12 {
 
+	public static void main(String args[]){
+		Scanner scan = new Scanner(System.in);
+		float height[]=new float[50];
+		int i,j;
+		float tem;
+		for(i=0;i<50;i++)
+		{
+			height[i]=scan.nextFloat();
+		}
+		for(i=0;i<50;i++)
+		{
+			for(j=i+1;j<50;j++)
+			{
+				if(height[i]<height[j])
+				{
+					temp=height[i];
+					height[i]=height[j];
+					height[j]=tem;
+					
+				}
+			}
+		}
+		System.out.println("The 4th Tallest Student Height: "+height[3]);
+		i=scan.nextInt();
+		System.out.println(height[i]);
+	}
 }
