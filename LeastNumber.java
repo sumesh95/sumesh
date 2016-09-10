@@ -7,10 +7,10 @@ public class Leastnumber{
         n = s.nextInt();
         System.out.println("Enter the k value");
         dig=s.nextInt();
-        int sol[]=new int[100];
+        int so[]=new int[100];
         for (j = 0;n>0; j++) 
         {  
-        sol[j]=n%10;  
+        so[j]=n%10;  
         n=n/10;  
         size++;
         }
@@ -18,11 +18,11 @@ public class Leastnumber{
         {
             for(j=i;j<size;j++)
             {
-                if(sol[i]>sol[j])
+                if(so[i]>so[j])
                 {
-                   temp=sol[j];
-                   sol[j]=sol[i];
-                   sol[i]=temp;
+                   temp=so[j];
+                   so[j]=so[i];
+                   so[i]=temp;
                 }
                 
         
@@ -31,7 +31,7 @@ public class Leastnumber{
         
         	for(i=0;i<size-dig;i++)
             {
-               ans=ans*10+sol[i];
+               ans=ans*10+so[i];
                 
                 
             }
